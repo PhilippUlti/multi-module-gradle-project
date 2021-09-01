@@ -16,7 +16,7 @@ project(":your-module-name").name = "YourCustomModuleName"
 ```
 ## Add module specific plugins/dependencies/repositories
 
-By splitting a project into multiple modules you are allowed to add module-specific plugins, repositories and dependencies to provide only the information needed for each module. You are also able to create dependencies between two or more modules within the same root project using `implementation(project(":your-module-name"))`. These additions need to be made inside the **build.gradle.kts**:
+By splitting a project into multiple modules you are allowed to add module-specific plugins, repositories and dependencies to provide only the information needed for each module. You are also able to create dependencies between two or more modules within the same root project using `implementation(project(":your-module-name"))`. These additions need to be made inside the **build.gradle.kts** (an example could look like this):
 ```kotlin
 plugins {
 	id("com.github.johnrengelman.shadow") version "5.1.0"
